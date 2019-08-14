@@ -1,3 +1,5 @@
+'use strict'
+
 const getMenu = () => {
   return `
   <section class="control__btn-wrap">
@@ -415,7 +417,7 @@ const mainControl = main.querySelector(`.main__control`);
 
 const renderComponent = (container, layout, position = `beforeend`) => {
   container.insertAdjacentHTML(position, layout);
-}
+};
 
 renderComponent(mainControl, getMenu());
 renderComponent(main, getSearch());
